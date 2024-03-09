@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.body {
+    background-image: url('../assets/svgs/blob-scene-haikei-home-landscape.svg');
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 38px;
+    height: auto;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.head {
+    font-family: Epilogue;
+    font-weight: bold;
+    font-size: 26px;
+    margin-left: 20px;
+    line-height: 1;
+}
+
+.header-right {
+    margin-left: auto;
+}
+
+.top-button-1 {
+    font-family: Epilogue;
+    color: #FFFFFF;
+    font-size: 13.5px;    
+    font-weight: 600;
+    box-shadow: 4px 1px 1px #636363;
+    padding: 0px 18px;
+    border-radius: 10px;
+    background: #7B6D8D;
+}
+
+.top-button-1:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    color: #FFFFFF;
+    background: #593F62;
+}  
+
+.top-button-2 {
+    font-family: Epilogue;
+    color: #000000;
+    font-size: 13.5px;
+    font-weight: 600;
+    box-shadow: 4px 1px 1px #7B6D8D;
+    padding: 0px 16px;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.top-button-2:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    color: #FFFFFF;
+    background: #7b6d8d9f;
+}
+
+.top-button-1,
+.top-button-2 {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.menu-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.big-img {
+    float: left;
+    margin-top: -20px;
+    margin-left: 60px;
+}
+
+.pdfs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 0;
+    width: 700px; 
+    height: 450px; 
+    border-radius: 10px;
+}
+
+.pdf-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: auto;
+    font-family: Epilogue;
+    color: #FFFFFF;   
+    font-weight: 700;
+    font-size: 28px;
+    box-shadow: 0 8px 32px 0 rgba(92, 92, 92, 0.377); 
+    border-radius: 14px;
+    border: 0px solid #3866A3;
+    background: rgba(110, 93, 131, 0.8); 
+    backdrop-filter: blur(10px); 
+    margin: 12px;
+    cursor: pointer;
+}
+
+.individual-pdf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: auto;
+    margin: 12px;
+    padding: 0px 20px;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px 0 rgba(52, 57, 128, 0.37); 
+    border: 0px solid #3866A3;
+    backdrop-filter: blur(10px); 
+    cursor: pointer;
+}
+
+.individual-pdf:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.03);
+}
+
+.pdf-icon {
+    height: 60px;
+}
+
+.pdf-metadata {
+    font-family: Rubik;
+    font-weight: 450;
+}
+
+.download-icon {
+    height: 50px;
+}
+
+.ques {
+    padding: 20px ;
+}
+
+.ques-button {
+    width: 140px;
+    font-family: Epilogue;
+    font-size: 26px;
+    color: #FFFFFF;
+    font-weight: 600;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 2px 18px;
+    border-radius: 10px;
+    border: 0px solid #3866A3;
+    background: rgba(110, 93, 131, 0.8); 
+}
+
+.information {
+    font-family: Rubik;
+    font-weight: 450;
+    font-size: 20px;
+}
+
+.sample-questions {
+    font-family: Rubik;
+    font-size: 18px;
+}
+
+.secondary-text {
+    font-family: Rubik;
+    font-size: 14px;
+}
+
+.more {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 45%;
+    right: 50%;
+    width: 160px;
+    height: 60px;
+    font-family: Epilogue;
+    color: #000000;
+    border-radius: 12px;
+    background-color: #A5C4D4;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .body {
+        background-image: url("../assets/svgs/blob-scene-haikei-home-portrait.svg");
+    }
+    
+    .header-right {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 0;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 64px; 
+        right: 0;
+        margin-right: 20px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.3); 
+        border: 1px solid rgba(255, 255, 255, 0.3); 
+        border-radius: 12px;
+        box-shadow: 0 8px 32px 0 rgba(52, 57, 128, 0.37); 
+        backdrop-filter: blur(10px); 
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+    }
+
+    .top-button-1,
+    .top-button-2 {
+        margin: 10px;
+        margin-bottom: 8px;
+    }
+    
+    .big-img {
+        display: block;
+        float: none;
+        height: 50%;
+        width: 50%;
+        margin: auto;
+    }
+
+    .pdfs {
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        margin-top: 50%;
+        margin-bottom: 50%;
+        width: 90%; 
+        height: 450px; 
+        border-radius: 10px;
+    }
+
+    .ques {
+        display: block;
+        margin-top: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 96%;
+    }
+
+    .more {
+        transform: translate(-20%, -10%);
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .pdfs {
+        top: 30%;
+    }
+
+    .ques {
+        top: 60%;
+    }
+
+    .more {
+        transform: translate(-50%, -10%);
+    }
+
+}
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+
+    .pdfs {
+        top: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .ques{
+        margin-top: 80%;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .ques {
+        margin-top: 110%;
+    }
+    
+}
+
+@media screen and (max-width: 680px) and (orientation: landscape) {
+
+    .pdfs {
+        top: 110%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .pdfs{
+        top: -50%;
+    }
+
+    .ques {
+        margin-top: 160%;
+        width: 90%;
+    }
+
+    .more {
+        transform: translate(-50%, 10%);
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+
+    .pdfs {
+        top: 50%;
+    }
+
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report - Insight</title>
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel = "icon" href = "../assets/icons/icon.png">
+    <link rel = "stylesheet" href = "../stylesheets/report-light.css">
+    <script src = "../scripts/report.js"></script>
+</head>
+<body class = "body">
+    <div class = "header-left">
+        <img src = "../assets/icons/icon.png" class = "icon"> 
+        <p class = "head">Insight</p>
+        <div class = "header-right">
+            <div class = "top-button-2"><p>Home</p></div>
+            <div class = "top-button-2"><p>PDFs</p></div>
+            <div class = "top-button-2"><p>Questions</p></div>
+            <div class = "top-button-2"><p>Resources</p></div>
+            <div class = "top-button-1"><p>Report</p></div>
+        </div>
+        <div class = "hamburger-menu">
+            <img class = "menu-icon" src = "../assets/icons/menu.png">
+        </div>
+        <div class = "dropdown-menu">
+            <div class = "top-button-2"><p>Home</p></div>
+            <div class = "top-button-2"><p>PDFs</p></div>
+            <div class = "top-button-2"><p>Questions</p></div>
+            <div class = "top-button-2"><p>Resources</p></div>
+            <div class = "top-button-1"><p>Report</p></div>
+        </div>
+    </div>
+    <div class  = "contact-methods">
+        <div class = "discord-invite">
+            <p class = "discord-information">Join the server and ping <mark>@Edwin</mark> (me), for reporting or help.</p>
+            <iframe class = "discord-widget" src="https://discord.com/widget?id=1018867366710489138&theme=light" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <a href = "https://discord.gg/p6hNdnwasr"><img class = "mobile-embed" src = "https://discord.com/api/guilds/1018867366710489138/widget.png?style=banner3"></a>
+        </div>
+        <div id="email-form">
+            <p class="email-information">You can also send me an<br>E-mail here.</p>
+            <form action="mailto:leekum794@gmail.com?subject=Insight Issue" method="post" enctype="text/plain">
+                <label for="name">Your Name:</label>
+                <br>
+                <input type="text" id="name" name="Name" required><br><br>     
+                <label for="email">Your Email:</label>
+                <br>
+                <input type="email" id="email" name="Email" required><br><br>
+                <label for="subject">Subject:</label>
+                <br>
+                <select id="subject" name="Subject" class="select-field" required>
+                    <option value="">Please Select an Option</option>
+                    <option value="Report Error">Report Error</option>
+                    <option value="Request Resources">Request Resources</option>
+                    <option value="Other">Other</option>
+                </select><br><br>
+                <label for="issue">Issue:</label><br>
+                <textarea id="issue" name="Issue" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Send Email">
+            </form>
+        </div>          
+    </div>
+</body>
+</html>

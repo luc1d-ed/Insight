@@ -1,96 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight</title>
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel = "icon" href = "./assets/icons/icon.png">
+    <link rel = "stylesheet" href = "./stylesheets/main-light.css">
+    <script src = "./scripts/main.js"></script>
+</head>
+<body class = "body">
+    <div class = "header-left">
+        <img src = "./assets/icons/icon.png" class = "icon"> 
+        <p class = "head">Insight</p>
+        <div class = "header-right">
+            <div class = "top-button-1"><p>Home</p></div>
+            <div class = "top-button-2"><p>PDFs</p></div>
+            <div class = "top-button-2"><p>Questions</p></div>
+            <div class = "top-button-2"><p>Resources</p></div>
+            <div class = "top-button-2"><p>Report</p></div>
+        </div>
+        <div class = "hamburger-menu">
+            <img class = "menu-icon" src = "./assets/icons/menu.png">
+        </div>
+        <div class = "dropdown-menu">
+            <div class = "top-button-1"><p>Home</p></div>
+            <div class = "top-button-2"><p>PDFs</p></div>
+            <div class = "top-button-2"><p>Questions</p></div>
+            <div class = "top-button-2"><p>Resources</p></div>
+            <div class = "top-button-2"><p>Report</p></div>
+        </div>
+    </div>
+    <div class = "main-content">
+        <img class = "big-img" src = "./assets/images/big-img.png">
+        <div class = "pdfs">
+            <div class = "pdf-button"><p>PDFs</p></div>
+            <div class = "individual-pdf"><img class = "pdf-icon" src = "./assets/icons/pdf-home.png"><p class = "pdf-metadata">Assignment Questions and Solutions (XII)</p><img class = "download-icon" src = "./assets/icons/download.png"></div>
+            <div class = "individual-pdf"><img class = "pdf-icon" src = "./assets/icons/pdf-home.png"><p class = "pdf-metadata">Second Semester Questions and Solutions</p><img class = "download-icon" src = "./assets/icons/download.png"></div>
+            <div class = "individual-pdf"><img class = "pdf-icon" src = "./assets/icons/pdf-home.png"><p class = "pdf-metadata">First Semester Questions and Solutions</p><img class = "download-icon" src = "./assets/icons/download.png"></div>
+            <div class = "individual-pdf"><img class = "pdf-icon" src = "./assets/icons/pdf-home.png"><p class = "pdf-metadata">Practical Questions and Solutions</p><img class = "download-icon" src = "./assets/icons/download.png"></div>
+        </div>
+        
+        <div class = "ques">
+            <div class = "ques-button"><p>Questions</p></div>
+            <p class = "information">Below are some questions for practice.</p>
+            <p class = "sample-questions">1. Write a program to accept a number and check whether the number is an Angstrom number or not.</p>
+            <p class = "secondary-text">(Angstrom number is a number that equals the sum of its digits, each raised to a power of number of digits. For example, if you have a number like 153, it's an Armstrong number because 1<sup>3</sup> + 5<sup>3</sup> + 3<sup>3</sup> equals 153.)</p>
+            <p class = "sample-questions">2. Write a program that asks the user to enter an integer (n). Create an arrays with 'n' elements. Ask the user to enter the 'n' double value to populate the array. Create another array which stores the square root of the number. Display both the arrays.</p>
+            <p class = "sample-questions">3. Write a program to input a sentence and find the number of words which begin and end with a vowel; also print those words.</p>
+            <p class = "sample-questions">4. Encryption is a technique of coding messages to maintain their secrecy. A String array of size 'n' where 'n' is greater than 1 and less than 10, stores single sentences (each sentence ends with a full stop) in each row of the array.<br><b>Write a program to accept the size of the array. Display an appropriate message if the size is not satisfying the given condition. Define a string array of the inputted size and fill it with sentences row-wise. Change the sentence of the odd rows with an encryption of two character ahead of the original character. Also change the sentence of the even rows by storing the sentence in reverse order. Display the encrypted sentences.</b></p>
+            <p class = "secondary-text">Input: n = 4<br>IT IS CLOUDY.<br>IT MAY RAIN.<br>THE WEATHER IS FINE.<br>IT IS COOL.<br>Output:<br>KV KU ENQWFA.<br>RAIN MAY IT.<br>VJG YGCVJGT KU HKPG.<br>COOL IS IT.<br>Input: n = 13 <br>Output: INVALID ENTRY</p>
+            <p class = "sample-questions">5. A number M will be a <b>monocot number</b> if the sum of its extreme (first and last) digits is equal to the sum of mean (all digits except first and last) digits. If the sum of extreme digits is not equal to the sum of mean digits, the number is called <b>dicot number</b>.</p>
+            <p class = "secondary-text"><b>Example 1</b><br>INPUT: N: 34326<br>OUTPUT: Sum of mean digits = 9<br>Sum of extreme digits = 9<br>34326 is a monocot number<br><b>Example 2:</b><br>INPUT: N = 173156<br>OUTPUT: Sum of mean digits = 16<br>Sum of extreme digits = 7<br>173156 is a dicot number.</p>
+            <div class = "more"><p>View more...</p></div>
+        </div>
+    </div>
+</body>
 </html>

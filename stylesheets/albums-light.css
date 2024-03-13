@@ -91,6 +91,8 @@ body {
     }
 
     .spotify-card {
+        transform: translateX(-100px);
+        transition-delay: 0s;
         width: calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
@@ -100,6 +102,8 @@ body {
 @media only screen and (max-width: 768px) {
 
     .spotify-card {
+        transform: translateX(-100px);
+        transition-delay: 0s;
         width: calc(100% - 20px);
         max-width: calc(100% - 20px);
     }

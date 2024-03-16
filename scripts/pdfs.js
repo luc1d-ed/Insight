@@ -56,6 +56,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function downloadFile(downloadText) {
         switch(downloadText) {
+            case 'Specimen MCQs (Chapterwise)':
+                var fileUrl = '../data/santosh/ISC_Class_12_MCQ.pdf'; 
+                var link = document.createElement('a');
+                link.href = fileUrl;
+                link.download = 'Computer MCQ.pdf'; 
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                break;
+
+            case 'Specimen Assertion Questions':
+                var fileUrl = '../data/santosh/isc computer science assetion based questions.pdf'; 
+                var link = document.createElement('a');
+                link.href = fileUrl;
+                link.download = 'Computer Assertion Questions.pdf'; 
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                break;
+
+            case 'Specimen Question Paper':
+                var fileUrl = '../data/santosh/GRADE-12-practice paper 2024.pdf'; 
+                var link = document.createElement('a');
+                link.href = fileUrl;
+                link.download = 'Computer Specimen Paper.pdf'; 
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                break;
+
             case 'Assignment (XII)':
                 var fileUrl = '../data/local/pdf/solutions/Computer Assignment XII.pdf'; 
                 var link = document.createElement('a');
